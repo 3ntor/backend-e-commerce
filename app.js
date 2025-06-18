@@ -48,7 +48,7 @@ app.use('/api/admin/user', adminUserRoutes);
 app.use('/api/admin/product', adminProductRoutes);
 app.use('/api/admin/category', adminCategoryRoutes);
 
-const PORT = process.env.PORT || 3001; // استخدام المنفذ 3001 كافتراضي
+const PORT = process.env.PORT || 8080; // استخدام المنفذ 8080 كافتراضي
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

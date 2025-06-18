@@ -3,6 +3,7 @@ const User = require('../models/User');
 const createDefaultAdmin = async () => {
   try {
     const existingAdmin = await User.findOne({ email: 'admin@admin.com' });
+
     if (existingAdmin) {
       console.log('✅ Default admin already exists');
       return;
@@ -18,7 +19,7 @@ const createDefaultAdmin = async () => {
     await admin.save();
     console.log('✅ Default admin created');
   } catch (error) {
-    console.error('Error creating default admin:', error);
+    console.error('❌ Error creating default admin:', error);
   }
 };
 
