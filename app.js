@@ -16,7 +16,7 @@ dotenv.config();
 const app = express();
 
 // CORS configuration to allow credentials and specific frontend origins
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001', 'https://melodious-lebkuchen-d6e9c2.netlify.app'];
+const allowedOrigins = ['https://melodious-lebkuchen-d6e9c2.netlify.app'];
 const corsOptions = {
   origin: allowedOrigins,
   credentials: true,
